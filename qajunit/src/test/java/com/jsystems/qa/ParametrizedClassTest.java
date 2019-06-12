@@ -40,7 +40,7 @@ public class ParametrizedClassTest extends ConfigJunit{
 
     @DisplayName("Second pamaetrized test")
     @ParameterizedTest(name = "Parametrized test with value {0}")
-    @ValueSource(strings = {"Hello","Help","Unit","Hello student"})
+    @ValueSource(strings = {"Hello","Hello Help","Hello Unit","Hello student"})
 
     public void paramSecondTest(String value){
         assertTrue(value.contains("Hello"));
