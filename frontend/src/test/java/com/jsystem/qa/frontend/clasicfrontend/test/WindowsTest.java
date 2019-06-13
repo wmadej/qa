@@ -1,6 +1,5 @@
-package com.jsystem.qa.frontend.test;
+package com.jsystem.qa.frontend.clasicfrontend.test;
 
-import com.jsystem.qa.frontend.test.ConfigFrontend;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;

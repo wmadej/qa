@@ -1,4 +1,4 @@
-package com.jsystem.qa.frontend.test;
+package com.jsystem.qa.frontend.clasicfrontend.test;
 
 import com.jsystem.qa.frontend.Configuration;
 import com.sun.org.apache.bcel.internal.util.ClassLoader;

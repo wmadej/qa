@@ -1,15 +1,13 @@
-package com.jsystem.qa.frontend.test;
+package com.jsystem.qa.frontend.clasicfrontend.test;
 
 import com.jsystem.qa.frontend.Configuration;
-import com.jsystem.qa.frontend.page.LoginPage;
-import com.jsystem.qa.frontend.page.MainWordpressPage;
-import com.jsystem.qa.frontend.page.UserPage;
+import com.jsystem.qa.frontend.clasicfrontend.page.LoginPage;
+import com.jsystem.qa.frontend.clasicfrontend.page.MainWordpressPage;
+import com.jsystem.qa.frontend.clasicfrontend.page.UserPage;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import sun.applet.Main;
 
 import static com.jsystem.qa.frontend.Configuration.LOGIN;
 import static java.lang.Thread.sleep;
@@ -45,10 +43,6 @@ public class FrontendTest extends ConfigFrontend{
         assertTrue(userPage.userAvatar.isDisplayed());
     }
 
-
-
-
-
     private void login() {
         wordpressPage = new MainWordpressPage(driver);
         wordpressPage.waitForVisibilityOfElement(wordpressPage.login, 30);
@@ -64,6 +58,7 @@ public class FrontendTest extends ConfigFrontend{
         loginPage.buttonContinue.click();
     }
 
+    @DisplayName("Login action test")
     @Test
     private void loginActionTest(){
         wordpressPage = new MainWordpressPage(driver);
@@ -85,12 +80,5 @@ public class FrontendTest extends ConfigFrontend{
 
         loginPage.waitForVisibilityOfElement(loginPage.password, 30);
         assertTrue(loginPage.buttonContinue.getText().equals("Log In"));
-
-
     }
-
-
-
-
-
 }
