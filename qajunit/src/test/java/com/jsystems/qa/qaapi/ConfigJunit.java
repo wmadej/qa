@@ -1,4 +1,4 @@
-package com.jsystems.qa;
+package com.jsystems.qa.qaapi;
 
 
 import org.junit.AfterClass;
