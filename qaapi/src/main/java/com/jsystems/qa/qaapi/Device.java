@@ -1,10 +1,12 @@
 package com.jsystems.qa.qaapi;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.List;
 
 public class Device<model> {
     public String type;
-    @JasonProperty()
-    //List<Device> device.model
+    @JsonProperty(value = "device.model", required = true)
+    List<DeviceModel> deviceModel;
 
 }
