@@ -1,4 +1,4 @@
-package com.jsystems.qa.qaapi;
+package com.jsystems.qa.qaapi.model;
 
 import java.util.List;
 
